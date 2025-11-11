@@ -8,10 +8,15 @@
     "scheme": "salestracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "extra": {
+      "SERVER_URL": "https://sales-tracker-server.onrender.com"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.salestracker.app"
     },
     "android": {
+      "package": "com.salestracker.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",

@@ -17,6 +17,21 @@ export default function TabLayout() {
         tabBarButton: HapticTab,
       }}>
       <Tabs.Screen
+        name="sales"
+        options={{
+          title: 'Sales Tracker',
+          headerShown: true,
+          tabBarIcon: ({ color }) => <IconSymbol name="chart" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="manager"
+        options={{
+          title: 'Manager',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.crop.circle" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
